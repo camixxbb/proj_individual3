@@ -4,7 +4,7 @@
   "description": "Servidor",
   "main": "src/index.js",
   "scripts": {
-    "vai": "nodemon src/index.js"
+    "start": "nodemon src/index.js"
   },
   "author": "Camilla",
   "license": "ISC",
