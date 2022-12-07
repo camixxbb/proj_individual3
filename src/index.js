@@ -5,7 +5,7 @@ const {uuid} = require('uuidv4')
 
 const app = express()
 app.use(express.json())
-const filmes = []
+const filmes = require ('./db.json/filmes')
 const doces = []
 const salas = []
 
