@@ -12,5 +12,13 @@
     "express": "^4.18.2",
     "nodemon": "^2.0.20",
     "uuidv4": "^6.2.13"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camixxbb/proj_individual3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/camixxbb/proj_individual3/issues"
+  },
+  "homepage": "https://github.com/camixxbb/proj_individual3#readme"
 }
