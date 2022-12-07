@@ -2,18 +2,20 @@
 const express = require('express')
 const {response} = require('express')
 const {uuid} = require('uuidv4')
+const dbController = require ('./db.json')
 
 const app = express()
 app.use(express.json())
-const filmes = require ('./db.json/filmes')
-const doces = []
-const salas = []
+//const filmes = []
+//const doces = []
+//const salas = []
 
 //ROTA FILMES
 
-app.get('/filmes', (request, response) => {
-   return response.json(filmes)
-})//visualizar
+//app.get('/filmes', (request, response) => {
+   //return response.json(filmes)
+//}) visualizar
+app.get('./db.json', dbController.get)
 app.post('/filmes', (request, response) => {    
    const {nome, ano, classificacao, descricao} = request.body
    const filme = {id: uuid(), nome, ano, classificacao, descricao}
